@@ -1,0 +1,478 @@
+/* Reset and base styles for OHS popup */
+.ohs-popup-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main popup overlay */
+.ohs-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ohs-popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Loading state for popup container */
+.ohs-popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 300px;
+}
+
+.ohs-popup-container:empty::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0f5288;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Main popup content container */
+.ohs-popup-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  max-width: 90vw;
+  max-height: 90vh;
+  animation: popupSlideIn 0.4s ease-out;
+  opacity: 0;
+  transform: scale(0.9) translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ohs-popup-content.loaded {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+@keyframes popupSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Close button */
+.ohs-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ohs-close-btn:hover {
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Multi-section layout (when both admission and open house are shown) */
+.ohs-multi-section {
+  display: flex;
+  width: 700px;
+  min-height: 400px;
+  background-image: url("https://i.imgur.com/AuphBvI.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.ohs-multi-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+}
+
+.ohs-multi-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Single section layout (when only admission is shown) */
+.ohs-single-section {
+  width: 400px;
+  min-height: 350px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  padding:15px;
+}
+
+/* Section divisions */
+.ohs-section {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  text-align: center; /* Center all content in sections */
+}
+
+.ohs-section .ohs-action-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.ohs-left-section {
+  border-right: 1px solid rgba(15, 82, 136, 0.1);
+}
+
+/* .ohs-right-section {
+} */
+
+/* Single section specific styling */
+.ohs-single-section .ohs-section {
+  padding: 40px 50px;
+  text-align: center;
+}
+
+/* Add this new style to center the action button in single sections */
+.ohs-single-section .ohs-action-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* Typography */
+.ohs-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.ohs-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ohs-program-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ohs-session-info {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.ohs-session-info p {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background: rgba(15, 82, 136, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #0f5288;
+}
+
+/* Color accents */
+.ohs-accent-blue {
+  color: #0f5288;
+}
+
+.ohs-accent-green {
+  color: #046031;
+}
+/* Action buttons */
+.ohs-action-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #046031 0%, #0a7c42 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(4, 96, 49, 0.3);
+  text-align: center;
+  min-width: 140px;
+}
+
+.ohs-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(4, 96, 49, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+.ohs-action-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(4, 96, 49, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ohs-popup-overlay {
+    padding: 15px;
+  }
+
+  .ohs-popup-content {
+    margin: 0;
+    max-width: 100%;
+    max-height: 95vh;
+    border-radius: 15px;
+  }
+
+  .ohs-multi-section {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .ohs-single-section {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .ohs-left-section {
+    border-right: none;
+    border-bottom: 2px solid rgba(15, 82, 136, 0.15);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ohs-section {
+    padding: 20px 25px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .ohs-single-section .ohs-section {
+    padding: 30px 25px;
+  }
+
+  .ohs-title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .ohs-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+
+  .ohs-program-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .ohs-session-info {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .ohs-session-info p {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .ohs-action-btn {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    min-width: 140px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .ohs-close-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+    top: 12px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ohs-popup-overlay {
+    padding: 10px;
+  }
+
+  .ohs-popup-content {
+    border-radius: 12px;
+  }
+
+  .ohs-section {
+    padding: 18px 20px;
+  }
+
+  .ohs-single-section .ohs-section {
+    padding: 22px 25px;
+  }
+
+  .ohs-title {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .ohs-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .ohs-program-title {
+    font-size: 1rem;
+  }
+
+  .ohs-session-info {
+    font-size: 0.85rem;
+  }
+
+  .ohs-session-info p {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .ohs-action-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .ohs-close-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top: 10px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ohs-popup-overlay {
+    padding: 8px;
+  }
+
+  .ohs-section {
+    padding: 15px 18px;
+  }
+
+  .ohs-single-section .ohs-section {
+    padding: 25px 20px;
+  }
+
+  .ohs-title {
+    font-size: 1.3rem;
+  }
+
+  .ohs-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .ohs-program-title {
+    font-size: 0.95rem;
+  }
+
+  .ohs-session-info {
+    font-size: 0.8rem;
+  }
+
+  .ohs-action-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Legacy class support for backward compatibility */
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.color-blue {
+  color: #0f5288;
+}
+
+.color-white-a {
+  color: white;
+  text-decoration: none;
+}
+
+.change-hover:hover {
+  text-decoration: none !important;
+  color: white !important;
+}

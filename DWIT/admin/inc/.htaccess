@@ -1,0 +1,7 @@
+<FilesMatch "\.(?:inc|php|py|rb)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^.*$ /404 [L]

@@ -1,0 +1,15 @@
+[20-Jun-2025 11:34:25 Europe/Berlin] PHP Warning:  require_once(../system/application_top.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php on line 2
+[20-Jun-2025 11:34:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../system/application_top.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php on line 2
+[20-Jun-2025 11:34:58 Europe/Berlin] PHP Warning:  require_once(../system/application_top.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php on line 2
+[20-Jun-2025 11:34:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../system/application_top.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php on line 2
+[20-Jun-2025 11:34:59 Europe/Berlin] PHP Warning:  require_once(../system/application_top.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php on line 2
+[20-Jun-2025 11:34:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../system/application_top.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\deerwalk-education-group\DWIT\index.php on line 2

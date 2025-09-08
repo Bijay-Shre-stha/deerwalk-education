@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*.container {
+	width: 1024px;
+	height:500px;
+	margin: 0px auto;
+}*/
+.clear {
+	clear: both;
+}
+
+.box{
+	/*width: 400px;*/
+	width: 35%;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	border-radius: 15px;
+	position: relative;
+	margin-top: 5%;
+	background-color: rgba(0,0,0,0.1);
+	padding-top: 4%;
+}
+
+body{
+	background-image: url("../images/login_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-family:sans-serif;
+	/*font-weight: 400;*/
+	/*font-weight: 20%;*/
+}
+
+p{
+	/*font-size: 12px;*/
+	font-size: 80%;
+	color: #e6e6e6;
+	margin-bottom: 4%;
+
+}
+
+button{
+	background-color: #1976D2;
+	border-width: 0px;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 3px;
+	margin: 20px;
+	/*font-size: 14px;*/
+	font-size: 90%;
+}
+
+button:hover{
+	background-color: #007bff;
+}
+
+input{
+	margin: 15px 10px;
+	padding: 10px;
+	border-radius: 2px;
+	border-width: 0px;
+	/*width: 350px;*/
+	width: 70%;
+	background-color: rgba(0,0,0,0);
+	border-bottom: 1px solid #bdbdbd;
+	color: white;
+	font-size: 16px;
+}
+
+input::placeholder
+{
+	color: #868e96;
+	opacity: 1;
+}
+
+.fa{
+	font-size: 14px;
+}
+
+.logo{
+	position: absolute;
+	left: 35%;
+	top: -9%;
+}

@@ -1,0 +1,122 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.4;
+}
+
+ul li a{
+	text-transform: none;
+	color: white;
+}
+
+ul li a:hover{
+	color: white;
+}
+
+.footer
+{
+	color: white;
+}
+
+.bodyContent{
+	margin-right: 0;
+	min-height: 100%;
+}
+
+.mainContent{
+	padding-right: 0;
+	padding-left: 0;
+	height: 100%;
+}
+
+.col-xl-12 > p{
+	margin-bottom: 0;
+	padding: 0.9%;
+}
+
+i{
+	margin-right: 5%;
+}
+
+h2{
+	margin-top: 3%;
+	text-decoration: underline;
+}
+
+.contentBox{
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	text-align: left;
+	min-height: 600px;
+}
+
+.fa-toggle-off{
+	color: red;
+}
+
+.fa-toggle-on{
+	color: green;
+}
+
+.fa-eye{
+	color: #046031;
+}
+
+.fa-edit{
+	color: #0f5288;
+}
+
+.fa-trash-alt
+{
+	color: #e61217;
+}
+
+.paginate li
+{
+	margin-right: 0.5%;
+}
+
+.invalid-feedback{
+	font-size: 100%;
+	margin-bottom: 0%;
+}
+
+.form-group{
+	margin-bottom: .75rem;
+}
+
+.mb-3
+{
+	margin-bottom: 0 !important;
+}
+
+.alert{
+	margin: 1%;
+}
+
+.setWidth{
+	min-width: 160px;
+}
+
+.side-nav li{
+	padding-top: 5.4%;
+	padding-bottom: 5.4%;
+}
+
+html, body {
+  height: 100%;
+}
+
+.custom-box{
+    border-radius: 5px;
+    padding: 40px 5px;
+    text-align: center;
+    color: white;
+    margin: 2%;
+    font-size: 24px;
+}
+
+.custom-box a{
+	color: white;
+}

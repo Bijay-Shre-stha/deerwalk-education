@@ -1,0 +1,421 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  /* background-color: #e5e5e5; */
+}
+
+.mob {
+  display: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/*Tablet*/
+
+/*Mobile L*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .adm-rqm {
+    height: auto;
+  }
+}
+
+/*Navbar and Footer*/
+
+/*Media Queries*/
+
+.sm-only {
+  display: none !important;
+}
+
+.pc-only {
+  display: block !important;
+}
+
+.about-pc {
+  display: block !important;
+}
+
+/* navbar */
+
+.bg-blue {
+  background-color: #0f5288;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.green {
+  border-top: 3px solid #046031;
+}
+
+.orange {
+  border-top: 3px solid #ea5d0f;
+}
+
+.white {
+  border-top: 3px solid #ffffff;
+}
+
+.brown {
+  border-top: 3px solid #ab5045;
+}
+
+body {
+  background-image: url(images/deerwalk-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 65%;
+  min-height: 100vh;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.bg-overlayBox-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  background-color: #0A492C;
+  opacity: 85%;
+}
+
+.bg-overlayBox-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  background-color: #0f5288;
+  opacity: 85%;
+}
+
+.bg-overlayBox-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  background-color: #009DCA;
+  opacity: 85%;
+}
+
+
+.mt-5, .my-5 {
+  margin-top: 3rem!important;
+}
+
+.title {
+  font-weight: 500!important;
+}
+
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+/* .sifal-content{
+  padding-left: 205px;
+}
+
+.college-content{
+  padding-left: 170px;
+} */
+
+/* .bg-overlayBox-1:hover .bg-overlayBoxImage1 {
+  background-image: url(images/dss-students.jpg);
+}
+
+.bg-overlayBoxImage2 {
+  background-image: url(images/For_College.jpg);
+} */
+
+/* trial */
+
+.row.justify-content-center {
+  display: flex;
+  justify-content: center;
+  gap: 1px; 
+}
+
+.col-md-auto {
+  flex: 1; 
+  min-width: 250px; 
+  max-width: 300px; 
+}
+
+.inner-div:hover {
+  border: white solid 2px;
+  box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+  background: url(images/dss-students.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-div-overlay:hover {
+  background-color: rgba(10, 73, 44, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-div {
+  height: 466px;
+  margin-top: 18px;
+}
+
+.inner-div-overlay {
+  height: 462px;
+}
+
+.inner-div-1:hover {
+  border: white solid 2px;
+  box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+  background: url(images/college.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-div-1 {
+  height: 466px;
+  margin-top: 18px;
+}
+
+.inner-div-overlay-1:hover {
+  background-color: rgba(15, 82, 136, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-div-overlay-1 {
+  height: 462px;
+}
+
+.inner-div-3:hover {
+  border: white solid 2px;
+  box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+  background: url(images/ARCHI_DDS.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inner-div-4:hover {
+  border: white solid 2px;
+  box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+  background: url(images/pokhara_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-div-3 {
+  height: 466px;
+  margin-top: 18px;
+}
+.inner-div-4 {
+  height: 466px;
+  margin-top: 18px;
+}
+
+.inner-div-overlay-3:hover {
+  background-color: rgba(0, 152, 202, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-div-overlay-3 {
+  height: 462px;
+}
+.inner-div-overlay-4 {
+  height: 462px;
+}
+
+.bg-overlayBox-1:hover {
+  opacity: 100%;
+}
+
+.bg-overlayBox-2:hover {
+  opacity: 100%;
+}
+
+.bg-overlayBox-3:hover{
+  opacity: 100%;
+}
+
+.span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bg-tns-black {
+  background-color: #000000a7;
+}
+
+@media (min-width: 999px) {
+  .title-font {
+    font-size: px !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .bg-overlayBox-1, .bg-overlayBox-2, .bg-overlayBox-3 {
+    width: 70%!important;
+    /* height: 500px; */
+    margin: 10px;
+  }
+}
+
+
+@media (max-width:1174){
+  .bg-overlayBox-1, .bg-overlayBox-3{
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 1139px) {
+  .bg-overlayBox-1, .bg-overlayBox-2, .bg-overlayBox-3{
+    width: 70%!important;
+    /* height: 500px; */
+    margin: 10px;
+  }
+}
+
+/* @media (max-width: 1139px) {
+  .inner-div, .inner-div-1 {
+    height: 400px;
+    margin-top: 25px;
+  }
+  @media (max-width: 1139px) {
+    .inner-div-overlay, .inner-div-overlay-1 {
+      height: 394px;
+    }
+    @media (max-width: 1138px) {
+      .title {
+        font-size: 15px;
+      }
+      @media (max-width: 1075px) {
+        .title {
+          font-size: 14px;
+        } */
+        @media (max-width: 1177px) {
+          .bg-overlayBox-1, .bg-overlayBox-2, .bg-overlayBox-3 {
+            width: 100%!important;
+            /* height: 395px; */
+            /* padding-bottom:20px!important; */
+          }
+        }
+        @media (max-width: 361px) {
+          .inner-div {
+            border: white solid 2px;
+            box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+            background: url(images/dss-students.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-overlay {
+            background-color: rgba(10, 73, 44, 0.7);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-1 {
+            border: white solid 2px;
+            box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+            background: url(images/college.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-overlay-1 {
+            background-color: rgba(15, 82, 136, 0.7);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-overlay, .inner-div-overlay-1, .inner-div-overlay-3 {
+            /* height: 342px; */
+          }
+          .inner-div, .inner-div-1, .inner-div-3 {
+            /* height: 352px; */
+            /* margin-top: 25px; */
+          }
+          .pt-5 {
+            padding-top: 1.5rem!important;
+          }
+          .title-font {
+            font-size: 14px!important;
+          }
+        }
+        @media (max-width: 376px) {
+          .inner-div {
+            border: white solid 2px;
+            box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+            background: url(images/dss-students.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-overlay {
+            background-color: rgba(10, 73, 44, 0.7);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-1 {
+            border: white solid 2px;
+            box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+            background: url(images/college.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .inner-div-overlay-1 {
+            background-color: rgba(15, 82, 136, 0.7);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .inner-div-3 {
+            border: white solid 2px;
+            box-shadow: inset 0 0 20px 10px rgba(0, 0, 0, 1);
+            background: url(images/ARCHI_DDS.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .inner-div-overlay-3 {
+            background-color: rgba(0, 152, 202, 0.7);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .inner-div-overlay, .inner-div-overlay-1, .inner-div-overlay-3 {
+            /* height: 200px; */
+          }
+          .inner-div, .inner-div-1, .inner-div-3 {
+            /* height: 345px; */
+            /* margin-top: 25px; */
+          }
+          .pt-5 {
+            padding-top: 1.5rem!important;
+          }
+          .title-font {
+            font-size: 14px!important;
+          }
+        }

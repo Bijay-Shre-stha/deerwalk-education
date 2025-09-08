@@ -1,0 +1,314 @@
+.calendar {
+    display: flex;
+    flex-flow: column;
+    padding-right: 30px;
+}
+.calendar .header .prev-month, .next-month {
+    font-size: 17px;
+    font-weight: bold;
+    color: #010b10;
+    padding: 20px 0;
+}
+.calendar .days {
+    display: flex;
+    flex-flow: wrap;
+}
+.calendar .header .current-month{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #010b10;
+    padding: 20px 0;
+}
+.calendar .days .day_name {
+    width: calc(100% / 7);
+    border-right: 1px solid #2c7aca;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #0d4c7f;
+    justify-content: center;
+}
+.calendar .days .day_name{
+    border-radius:5px;
+}
+.calendar .days .day_name:nth-child(7) {
+    border: none;
+}
+.calendar .days .day_num {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% /7);
+    border-right: 1px solid #e6e9ea;
+    border-bottom: 1px solid #e6e9ea;
+    /* padding: 10px; */
+    border-radius: 5px;
+    color: #151718;
+    cursor: pointer;
+    min-height:12vh;
+    justify-content: center;
+}
+
+.calendar .days .day_num span {
+    display: inline-flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.calendar .days .day_num.ignore {
+    background-color: #fdfdfd;
+    color: #ced2d4;
+    cursor: inherit;
+}
+.calendar .days .day_num.selected {
+    background-color: #f1f2f3;
+    cursor: inherit;
+}
+
+
+ .calendar .header .calendar-name{
+    font-size: 1.5rem;
+    color: #0f5288;
+    font-weight: 500;
+    line-height:1.2;
+ }
+
+/* monthly events css */
+.monthly-events {
+    display: flex;
+    flex-flow: column;
+    margin: 6.75rem auto 0 auto;
+    width: 100%;
+    outline:2px solid #0d4c7f;
+    padding: 0;
+}
+
+.monthly-events-content-list .event-list {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  /* border-radius: 8px; */
+  margin: 20px 0;
+}
+
+.monthly-events-content-list .event-list .event-date {
+    background: #0d4c7f;
+    /* min-width: 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 2px;
+    font-weight: bold;
+    text-align: center;
+    border-radius:3px;
+    /* border-radius: 8px 8px 0 8px; */
+    margin: auto;
+
+}
+
+.date-event-name p{
+    font-weight:500px !important;
+}
+
+.modal-content .modal-header{
+    padding: 10px 15px;
+}
+.modal-header{
+    background-color: rgb(19 169 19 / 22%);
+}
+.modal-header h5{
+    font-weight:bold;
+}
+
+.modal-body {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.modal-date-title, .modal-event-body{
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #373a3c;
+    text-align: left;
+    
+}
+
+.monthly-events .monthly-events-header{
+    background-color: #0d4c7f;
+    /* height:67px; */
+}
+
+.monthly-events .monthly-events-content .monthly-events-content-list div div div{
+    margin:auto;
+}
+.monthly-events .monthly-events-content .monthly-events-content-list div div div p{
+    padding: 0px 10px ;
+    font-weight: 500;
+    color: #0d4c7f;
+    margin:auto;
+}
+
+.monthly-events-content-list{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 78vh;
+}
+
+.monthly-event-list-title{
+    color:whitesmoke;
+    font-size:1.4rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: 0;
+    line-height:1.7;
+}
+/* 
+hr{
+    margin-top: 0;
+    margin-bottom:0;
+    width:50%;
+    background-color:#0d4c7f;
+    height:0.5px
+} */
+
+.no-event-update{
+    font-size: 16px;
+    color:#0d4c7f;
+    font-weight: 650;
+    margin: 1rem;
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    /* background: #0d4c7f; */
+    border-radius: 8px;
+} 
+
+
+.bg-has-event{
+    background-color: rgb(19 169 19 / 22%);
+}
+
+.bg-is-holiday{
+    background-color: rgb(228 73 73 / 50%);
+}
+
+@media only screen and (max-width: 769px) {
+  *{
+    font-size: 14px;
+  }
+
+  .calendar{
+    padding:0;
+  }
+
+  .calendar .days .day_num span {
+    font-size: 17px;
+}
+
+  /* .calendar .days{
+    border: 1px solid #0d4c7f;
+  } */
+  .calendar .days .day_name{
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .calendar .days .day_num{
+    padding:0;
+    min-height:8vh;
+  }
+  
+
+.date-event-name{
+    font-weight: 500;
+}
+
+    
+.monthly-events-content-list{
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    height: 50vh;
+}
+
+.monthly-event-list-title{
+    line-height: 2.2;
+    padding: 0px;
+}
+
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1235px) {
+    .monthly-events-content-list{
+        height: 78vh;
+        font-size: 12px;
+    }
+     .calendar .days .day_num span {
+        font-size: 18px;
+    }
+   
+    .calendar .days .day_name {
+        font-size: 13px;
+
+    }
+    /* .monthly-events {
+        margin: 12.75vh auto 0 auto;
+    } */
+}
+
+@media only screen and (min-width:1236px) and (max-width:1900px){
+    .monthly-events-content-list{
+        /* height: 78vh; */
+        font-size: 15px;
+    }
+    .calendar .days .day_num span {
+        font-size: 22px;
+    }
+   
+    .calendar .days .day_name {
+        font-size: 17px;
+
+    }
+ 
+}
+
+@media only screen and (min-width:1900px){
+      .monthly-events-content-list{
+        height: 78vh;
+        font-size: 19px;
+    }
+    .calendar .days .day_num span {
+        font-size: 25px;
+    }
+   
+    .calendar .days .day_name {
+        font-size: 20px;
+
+    }
+    .monthly-events-content-list .event-list .event-date {
+        padding: 10px 0px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 10px;
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(211, 201, 201); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

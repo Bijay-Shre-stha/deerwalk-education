@@ -1,0 +1,394 @@
+
+/*Admission*/
+
+/*Tablet*/
+
+@media only screen and (width:768px){
+    .adm-rqm{
+        height: 825px;
+    }
+
+    .std-test {
+        height:135vh!important;
+    }
+
+}
+/*Large screen*/
+
+@media screen and (min-width: 1800px) {
+    .lead {
+        font-weight: 400;
+    }
+    .ohs-container {
+        margin-top: 312px !important;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .adm-rqm{
+        height: 150vh;
+    }
+
+    .std-test {
+        height:115vh ;
+    }
+
+    .apply-adm-btn {
+        left: 39%;
+        max-width: 180px;
+    }
+
+
+}
+
+/*Mobile L*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+   .adm-rqm{
+       height: auto;
+   }
+
+    .adm-stat {
+        height: 650px;
+    }
+
+    .ohs-head-2 {
+        padding-top: 40px;
+    }
+
+    .ohs-container {
+        height: 275px;
+    }
+
+    .apply-adm-btn {
+        left: 29%;
+    }
+
+    .subject-header{
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+
+    .course-row .col-md-9 .card .card-body {
+        font-size: 0.8rem;
+    }
+
+    .std-test {
+        height:530px ;
+    }
+
+
+
+    #OHSLoader .container h3 {
+        font-size: 20px!important;
+    }
+
+    #OHSLoader .container p {
+        font-size: 12px!important;
+    }
+
+    #logo_fs {
+        margin-left: 52px!important;
+    }
+    .error-img{
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+/*Navbar and Footer*/
+
+
+/*Media Queries*/
+.sm-only {display: none !important;}
+.pc-only {display: block !important;}
+.about-pc {display: block !important;}
+
+@media all and (max-width: 767px)
+{
+    .card button{
+        white-space: normal;
+        text-align: left;
+    }
+
+    .menu-bg{
+    background-image: url(../images/menu-bg-final_menu-back.jpg);
+    background-position: bottom;
+    background-size: cover;
+        position: relative;
+    }
+
+    .menu-bg .row-overlay{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #0f5288;
+        opacity: 0.7;
+        top: 0;
+    }
+    .menu-bg .col-md-3{
+        height: 70px!important;
+        border-top:1px solid white;
+
+    }
+
+    .menu-bg .col-md-3 h5{
+        color: white;
+        padding-top: 8px;
+        font-size: 1.0rem;
+    }
+
+    .form-connect2{
+        width: 80%;
+    }
+
+
+
+
+
+    .contact_info
+    {
+        font-size: 9px;
+        height: 10px !important;
+    }
+    .nav_icon
+    {
+        font-size: 8px !important;
+
+    }
+    .narrow
+    {
+        margin-top: 1.5rem !important;
+    }
+    .top_bar
+    {
+
+    }
+
+    .pc-only {display: none !important;}
+    .sm-only {display: block !important;}
+    .pc-onlyss {display: none !important;}
+
+
+
+    #text
+    {
+        font-size: 40px;
+    }
+    .size_a
+    {
+        height: 425px !important;
+    }
+
+    .mob-nav
+    {
+
+        /*	font-weight: bold;*/
+        font-size: 15px;
+        color:white !important;
+        line-height: 12px!important;
+        /* padding-bottom: 25px;*/
+    }
+
+    .mob-nav-sm
+    {
+        font-size: 15px;
+        color:white !important;
+        line-height: 12px!important;
+    }
+
+    .loginbtn{
+        margin-left: unset!important;
+    }
+    .drop_content
+    {
+        color: #0f5288!important;
+        font-size: 12px!important;
+        padding: 0rem 1.5rem!important;
+    }
+
+    .drop_content-sm
+    {
+        color: #0f5288!important;
+        font-size: 12px!important;
+    }
+
+    .btns
+    {
+        width: 100% !important;
+    }
+    .btns1
+    {
+        width: 100% !important;
+    }
+    .btnNews
+    {
+        width: 100% !important;
+    }
+    #text
+    {
+        font-size: 30px;
+
+    }
+    .b
+    {
+        margin-top: 280px;
+    }
+
+    .ptt
+    {
+        margin-top: 3rem !important;
+    }
+    .sizeLearn
+    {
+        height: 10vh;
+    }
+    #textAbout
+    {
+        font-size: 28px;
+        color: #0c4c7f;
+        text-transform: uppercase;
+        text-align: center !important;
+        display: inline-block !important;
+        line-height: 55px;
+    }
+    .backAbout
+    {
+
+    }
+    .q
+    {
+        height: 250px;
+        width: 100px;
+        background: red;
+    }
+    /*.link--inline {
+    background-color: #034ea1;
+    border-right: none;
+    border-top: none;
+    }*/
+    .link-card {
+        min-height: 90px;
+        position: relative;
+
+        width: 100%;
+        text-align: center;
+        background-color: #034ea1;
+        border-right: none;
+        border-top: none;
+
+        font-size: 1rem;
+        line-height: 2;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+
+    }
+
+    .link__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90%;
+        -webkit-box-flex: 1;
+        flex: 1;
+        padding: 0 35px;
+
+    }
+    .linkright
+    {
+        color: #50c53b;
+        font-size: 30px !important;
+        display: inline-block;
+
+    }
+    /*.link--inline .h5, .link--inline h5 {
+        position: relative;
+    }*/
+    .check
+    {
+        line-height: 15px !important;
+    }
+    a
+    {
+        display: inline-block;
+        font-family: MalloryBook,sans-serif;
+
+    }
+    #link
+    {
+        color: white;
+        font-size: 22px;
+    }
+
+    .footer
+    {
+        background:  /*#034ea1*/ white !important;
+        margin-top: 0px !important;
+        height: 355px !important;
+    }
+    .footer__content
+    {
+        padding: 30px 40px;
+    }
+    #logo_fs
+    {
+        margin-top: 0px;
+        margin-left: 16px;
+    }
+
+    .menu--footer {
+        margin: 30px 0 0 0;
+        text-transform: uppercase;
+        text-align: 	center;
+        display: 	inline-block;
+        line-height: 	2rem;
+    }
+    .menu--footer .menu__item {
+        margin: 0 10px 0 0;
+    }
+    .menu__item {
+        display: inline-block;
+        color:#034ea1;
+        font-size: .875em;
+    }
+    .hidebars
+    {
+        border-color: #034ea1 /*#afd4ee*/ ;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+    }
+    .footer__address
+    {
+        text-align: center !important;
+        color: #034ea1;
+    }
+    .foot
+    {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+
+    }
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius:0;
+}
+
+

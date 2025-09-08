@@ -1,0 +1,149 @@
+.club-name {
+  text-align: center;
+  color: #0f5288;
+  font-family: "Segoe UI", "sans-serif";
+  font-size: 40px;
+  padding-bottom: 24px;
+}
+.club-introduction-section {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+.club-image {
+  width: 398px;
+  height: 398px;
+}
+.left-division {
+  /* display: flex;
+  align-items: flex-start; */
+  width:100% !important;
+}
+.dwit-color{
+  color:#0b3464 !important;
+  opacity:1 !important;
+}
+
+.gap-between {
+  width: 22px;
+}
+.applyenrollbtn{
+  opacity:1 !important;
+}
+.right-division {
+  /* text-align: justify;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  width: 560px; */
+  /* filter: drop-shadow(3px 3px 6px #0F5288); */
+}
+.arial {
+  font-family: "Segoe UI", "sans-serif";
+  font-size: 24px;
+  color: #0b3464;
+}
+
+.information {
+  font-family: "Segoe UI", "sans-serif";
+  color: #333333;
+  font-size: 19.2px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  background-color: white;
+  color: #0f5288;
+  font-family: "Segoe UI", "sans-serif";
+  border-radius: 10px;
+  border-width: 0;
+  width: 144px;
+  height: 51px;
+  font-size: 22px;
+}
+
+.button:active {
+  background-color: #0f5288;
+  color: white;
+}
+
+.club-lead {
+  font-family: "Segoe UI", "sans-serif";
+  font-size: 32px;
+  color: #0f5288;
+  text-align: center;
+}
+
+.line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.club-lead-section {
+  padding-top: 40px;
+}
+.club-lead-division {
+  display: flex;
+  justify-content: center;
+}
+.club-lead-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  width: 330px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+}
+.member-photo {
+  width: 120px;
+  border-radius: 50%;
+  background-color: grey;
+  height: 120px;
+  object-fit: cover;
+}
+
+.member-name {
+  padding-top: 20px;
+  font-family: "Segoe UI", "sans-serif";
+  color: #0b3464;
+  font-size: 22px;
+}
+
+.member-position {
+  font-family: "Segoe UI", "sans-serif";
+  font-size: 20px;
+  color: #0f5288;
+}
+
+.club-members {
+  font-family: "Segoe UI", "sans-serif";
+  font-size: 32px;
+  color: #0f5288;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.club-member-division {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.club-member-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  width: 330px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+}
+
+.club-member-box:hover{
+  transform: scale(1.1);
+}

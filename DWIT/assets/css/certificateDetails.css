@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "sans-serif";
+    /* letter-spacing: 1px; */
+    /* line-height: 30px; */
+}
+body{
+    font-size: 1rem;
+}
+
+
+:root {
+  /* font-size: 10px; */
+  --primary-white: #ffffff;
+  --primary-blue: #0e5289;
+  --secondary-blue: #029c8a;
+  --primary-black: #000000;
+}
+
+.certificate-details-div{
+    margin:3rem 3rem;
+}
+
+.student-details-div {
+    border:#029c8a;
+    border-style:solid;
+    border-width:3px;
+    margin:0.2rem;   
+    font-size:0.8rem;
+    overflow: auto;
+}
+.student-details-div .row {
+    /* margin-left:0; */
+    margin-right:0;
+}
+
+.detail-text{
+    font-weight: 600;
+}
+.sharing-icon{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.linked-in-sharing-icon{
+    margin-top: -0.5rem;
+}
+.fb-sharing-icon{
+    margin-top: -0.5rem;
+}
+
+.detail p{
+    margin-bottom:0;
+}
+
+.congratulation-heading-text{
+    color:#0f5288;
+}
+
+.congratulation-msg-text{
+    justify-content: space-between;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.dropdown:hover .dropdown-menu{
+    background: linear-gradient(90deg,#02a28b,#067f87 52.4%,#0a5f82);
+}
+.dropdown:hover .dropdown-menu .dropdown-item:hover{
+    font-weight: bold;
+}
+
+/* .student-details-only{
+    margin-left:1rem;
+} */
+ @media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .congratulation-heading-text{
+    font-size: 1.2rem;
+  }
+
+  .student-details-only{
+    margin: 0 3rem;
+    font-size: 0.9rem;
+  }
+  .certificate-panel{
+    margin: 2rem 0;
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+    body {
+    font-size: 0.9rem;
+    }
+    .congratulation-heading-text{
+        font-size: 1.4rem;
+    }
+    .student-image-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .student-details-only{
+        margin: 0 0.5rem;
+        font-size: 0.9em;
+    }
+    .certificate-panel{
+        margin: 2rem 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+    font-size: 0.9rem;
+    }
+    .congratulation-heading-text{
+        font-size: 1.4rem;
+    }
+    
+     .student-image-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .student-details-only{
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+    .certificate-panel{
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+    font-size: 1rem;
+    }
+    .congratulation-heading-text{
+        font-size: 1.5rem;
+    }
+    .student-image-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .student-details-only{
+        margin: 0 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    body {
+    font-size: 1.1rem;
+    }
+    .congratulation-heading-text{
+        font-size: 1.8rem;
+    }
+ 
+    .student-details-only{
+        margin: 0 1.5rem;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    body {
+    font-size: 1.1rem;
+    }
+    .congratulation-heading-text{
+        font-size: 1.8rem;
+    }
+ 
+    .student-details-only{
+        margin: 0 1.5rem;
+        font-size: 1.1rem;
+    }
+}

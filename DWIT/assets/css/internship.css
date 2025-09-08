@@ -1,0 +1,389 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+/*	margin-top: 0.5rem;*/
+  padding:0rem 0rem 0rem;
+
+/*  margin-bottom:1rem;*/
+}
+
+.dropdown .dropdown-menu {
+  border-radius:0;
+ }
+ .aud:hover
+ {
+ 	color: white !important;
+ 	  background: #0d4c7f;
+ }
+
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.aud:hover
+ {
+ 	color: white !important;
+ 	  background: #0d4c7f;
+ 	/*  padding-top: 20px;*/
+ }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    /*margin-top: 0.9rem;*/
+   /*   margin-top: 8px;*/
+  border-radius:0;
+
+  background: #0d4c7f;
+ }
+}
+.mobCol
+{
+	color: green !important;
+}
+
+/*--
+
+
+ --*/
+
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+
+
+.top_bar
+{
+	background: #0d4c7f;
+	/*padding:5px 0;*/
+	padding-top: 0px;
+	padding-bottom: 5px;
+	padding-right: 0px;
+	padding-left: 0px;
+	height: 50px
+}
+.nav
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.location
+{
+	margin-right: 5px;
+}
+.contact_info
+{
+	color: white;
+	font-size: 16px;
+
+}
+.drop_content
+{
+	color: white;
+}
+
+#logo
+{
+	height: 50px;
+    /* width: 200px; */
+    margin-left: 6px
+}
+.nav_bar
+{
+	margin-top: 9px;
+}
+.down_navs
+{
+	/*background-color: red;*/
+	height: 90px;
+	box-shadow: 10px 10px 8px #c5c1c1;
+}
+.loginbtn
+{
+	margin-bottom: 10px;
+	font-size: .75rem;
+    font-weight: 700;
+    color: #087285;
+    letter-spacing: .86px;
+    line-height: 1.25;
+    padding: 13px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;  
+    position: relative;
+    transition-duration: .4s;
+    transition-property: background,color;
+    border:2px solid;
+    border-image-source: linear-gradient(90deg,#02a28b,#067f87 52.4%,#0a5f82);
+    border-image-slice: 1;
+    border-radius: 0px;
+}
+.loginbtn:hover
+{
+	background: linear-gradient(90deg,#02a28b,#067f87 52.4%,#0a5f82);	
+	color: #fff;
+}
+.nav-item
+{
+	color: black !important;
+}
+.aud
+{
+	margin-top: 5px;
+	font-size: 20px;
+	color: black !important;
+	text-transform: uppercase;
+	padding-bottom:25px;
+/*	padding-bottom: 25px;*/
+}
+.main-text
+{
+	top: 20% !important;
+	left: 50%;
+
+}
+.view
+{
+background-image: url('../images/deerwalk-college.jpg');
+background-repeat: no-repeat; 
+background-size: cover; 
+background-position: center center; 
+height: 500px;
+}
+
+.
+.mid
+{
+	height: 250px;
+	background-color: #0c4c7f;
+	margin-top: 35vh;
+	
+	color: white;
+	opacity: 0.7;
+	font-size: 23px;
+
+	
+	text-transform: uppercase;
+}
+#text_a
+{
+	margin-top: 50px !important;
+	opacity: 1 !important;
+}
+.a
+{
+	margin-top: 10vh;
+}
+.col
+{
+	background-color: red;
+}
+.content
+{
+	margin-top: 20px;
+	height: 60vh;
+/*	background-color: purple;*/
+	padding-left: 50px !important;
+}
+.contents
+{
+	margin-top: 20px;
+	height: 60vh;
+/*	background-color: purple;*/
+	padding-left: 50px !important;
+}
+
+.imagebox
+{
+
+	height: 60vh;
+	/*background-color: green;*/
+}
+.shad
+{
+	    margin-top: 32px;
+    /* margin-left: 352px; */
+    height: 276px;
+    width: 400px;
+   /* background-color: blue;*/
+    background: url(../images/sample.jpg);
+    background-repeat: no-repeat; 
+background-size: cover; 
+    float: right;
+    margin-right: 182px;
+}
+.image
+{
+	margin-top: 10px;
+    height: 320px;
+    width: 220px;
+    background-color: #0c4c7f;
+    padding-top: 20px;
+    margin-left: 260px;
+}
+
+
+.imageboxs
+{
+
+	height: 60vh;
+/*	background-color: green;*/
+}
+.shads
+{
+	    margin-top: 32px;
+    /* margin-left: 352px; */
+    height: 276px;
+    width: 400px;
+   /* background-color: blue;*/
+    background: url(../images/sample.jpg);
+    background-repeat: no-repeat; 
+background-size: cover; 
+    float: right;
+    margin-right: 60px;
+}
+.images
+{
+	margin-top: 10px;
+    height: 320px;
+    width: 220px;
+    background-color: #0c4c7f;
+    padding-top: 20px;
+    margin-left: 160px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 767px)
+{
+	.contact_info
+	{
+		font-size: 9px;
+		height: 10px !important;
+	}
+	.nav_icon
+	{
+		font-size: 8px !important;
+
+	}
+	.top_bar
+	{
+
+	}
+
+	.pc-only {display: none !important;}
+	.sm-only {display: block !important;}
+	.pc-onlyss {display: none !important;}
+
+	
+
+	#text
+	{
+		font-size: 40px;
+	}
+	.size
+	{
+		height: 60vh;
+	}
+	.btns
+	{
+		width: 100% !important;
+	}
+	.btns1
+	{
+		width: 100% !important;
+	}
+	.btnNews
+	{
+		width: 100% !important;
+	}
+	#text
+	{
+		font-size: 30px;
+
+	}
+	.b
+	{
+		margin-top: 280px;
+	}
+	
+	.content {
+    margin-top: 20px;
+    height: 44vh !important;
+    /* background-color: purple; */
+    padding-left: 50px !important;
+}
+
+.shad
+{
+	margin-right: 12px !important;
+    width: 295px !important;
+    height: 256px;
+}
+.image
+{
+	width: 146px !important;
+    margin-left: 206px !important;
+    height: 309px;
+}
+.imagebox
+{
+	height: 45vh !important;
+}
+.contents
+{
+	height: 42vh !important;
+	padding-right: 50px !important;
+}
+.shads
+{
+	margin-top: 45px !important;
+	margin-left: 33px !important;
+	height: 256px !important;
+	width: 295px !important;
+	float: left !important;
+}
+.images
+{
+	margin-top: 16px !important;
+	height: 309px !important;
+	width: 188px !important;
+	padding-top: 20px !important;
+	margin-left: 160px !important;
+}
+.imageboxs {
+    height: 45vh !important;
+
+
+
+
+	.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  border-radius:0;
+ }
+	
+
+	
+}
