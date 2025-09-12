@@ -342,17 +342,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="get" action="certificateDetails.php?validation_id">
-                        <div class="form-group">
-                            <label for="validation_id" class="col-form-label">Enter Verifiation ID:</label>
-                            <input type="text" class="form-control" name="validation_id" id="validation_id" autofocus />
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <input type="submit" class="btn btn-primary" value="Verify" />
-                            <!-- onclick="window.location.href=this.form.action + this.form.validation_id.value;" -->
-                        </div>
-                    </form>
+                   
                 </div>
 
             </div>
