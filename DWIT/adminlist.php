@@ -52,6 +52,15 @@ include('./include/header.php'); ?>
 
         <div class="col-lg-3 col-md-4 col-sm-6 card-cont">
             <div class="card club-card-small mx-auto text-center">
+                <img src="./assets/images/NarayanMourya.png" class="club-img-small">
+                <div class="club-content-small">
+                    <h6 class="text-center club-name-small">Narayan Mourya | Digital Marketing Lead</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 card-cont">
+            <div class="card club-card-small mx-auto text-center">
                 <img src="./assets/images/Rojina Dahal.jpg" class="club-img-small">
                 <div class="club-content-small">
                     <h6 class="text-center club-name-small">Rojina Dahal | Librarian</h6>
