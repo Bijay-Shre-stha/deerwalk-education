@@ -36,9 +36,6 @@
       <a href="downloads.php">
         <p id="footer_content_right"> </i>Downloads</p>
       </a>
-      <a href="fellowship.php">
-        <p id="footer_content_right"> </i>Teaching Fellowship</p>
-      </a>
       <a href="QAA/QAALogin.php">
         <p id="footer_content_right"> </i>QAA</p>
       </a>

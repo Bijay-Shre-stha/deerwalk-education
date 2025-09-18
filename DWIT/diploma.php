@@ -8,6 +8,7 @@ include('./include/header.php');
 <!--Page Banner-->
 <div class="container-fluid diploma-bg">
     <div class="container page-title">
+        
         <h4 class="display-6 text-center r-d-unit-top">Diploma in US Healthcare Data Analytics</h4>
     </div>
 </div>
@@ -80,7 +81,6 @@ include('./include/header.php');
         link.click();
         link.remove();
     }
-
 
 </script>
 
