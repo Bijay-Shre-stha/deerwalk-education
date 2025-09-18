@@ -1,4 +1,4 @@
-<div class="footer pc-only">
+<div class="footer ">
   <div class="row">
     <div class="col-md-3 footer_left">
       <img id="logo_f" class="navbar-brand" src="./assets/images/logo_white.png" style="height: 75px; width: 200px;"><br><br>
